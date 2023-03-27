@@ -1,5 +1,6 @@
 {
   "name": "exchange-rate-app",
+  "homepage":"https://dayneflorence.github.io/exchange-rate-site/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
