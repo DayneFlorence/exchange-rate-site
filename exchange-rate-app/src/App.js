@@ -1,11 +1,24 @@
 
-import React from 'react';
-import './App.css';
 
-const App = () => {
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; 
+import Layout from './Layout';
+import './App.css';
+const App=() => { 
   return (
-    <h1>Hello World</h1>
+<Router>
+  <Layout>
+    <Switch>
+      <Route path="/" exact render={() => <h1>Hello world</h1> } /> 
+      <Route render={() => <h1>404 Not found</h1>} />
+</Switch> 
+</Layout>
+</Router>
   );
+
 }
+
+
+
 
 export default App;
